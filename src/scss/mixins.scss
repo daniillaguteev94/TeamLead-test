@@ -1,0 +1,110 @@
+@mixin mw($mw,$width:100%) {
+    width: $width;
+    max-width: $mw;
+}
+
+@mixin wh($width,$height:$width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin fw($fw) {
+    flex: 0 0 $fw;
+    max-width: $fw;
+}
+
+@mixin offset($margin,$padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin px($px__l,$px__r:$px__l) {
+    padding: {
+        left: $px__l;
+        right: $px__r;
+    }
+}
+
+@mixin py($py__l,$py__r:$py__l) {
+    padding: {
+        top: $py__l;
+        bottom: $py__r;
+    }
+}
+
+@mixin mx($mx__l,$mx__r:$mx__l) {
+    margin: {
+        left: $mx__l;
+        right: $mx__r;
+    }
+}
+
+@mixin my($my__t,$my__b:$my__t) {
+    margin: {
+        top: $my__t;
+        bottom: $my__b;
+    }
+}
+@mixin pos($pt,$pl,$pp:absolute) {
+    top: $pt;
+    left: $pl;
+    position: $pp;
+}
+
+@mixin border($bw,$bc,$bs:solid) {
+    border: {
+        width: $bw;
+        color: $bc;
+        style: $bs;
+    }
+}
+
+@mixin bg($bgs,$bgp:0 0) {
+    background: {
+        size: $bgs;
+        position: $bgp;
+        repeat: no-repeat;
+        color: rgba(0,0,0,0);
+    }
+}
+
+@mixin bordered($bordered__rad,$bordered__color,$bordered__bg:#fff) {
+    border-radius: $bordered__rad;
+    background: $bordered__bg;
+    border: 1px solid $bordered__color;
+}
+@mixin font($fs,$fw) {
+    font: {
+        size: $fs;
+        weight: $fw;
+    }
+}
+
+@mixin fs-lh($fs,$lh) {
+    font-size: $fs;
+    line-height: $lh;
+}
+
+@mixin inline-block($va:top) {
+    display: inline-block;
+    vertical-align: $va;
+}
+
+@mixin flexBetween($df,$sb,$fdi) {
+    display: $df;
+    justify-content: $sb;
+    flex-direction: $fdi;
+}
+
+@mixin text-header {
+    @include  fs-lh(14px, 19px);
+    font-weight: normal;
+    color: $color__white;
+    transition: all .3s ease;
+}
+
+@mixin title ($fs, $lh, $fw) {
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: $fw;
+}
