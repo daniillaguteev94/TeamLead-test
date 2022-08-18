@@ -1,0 +1,6 @@
+.section{
+    &.section--promo{
+        @include wh(100%);
+        
+    }
+}

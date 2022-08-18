@@ -1,0 +1,37 @@
+.about{
+    
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    &__icon{
+        width: 100%;
+        padding-top: 45px;
+        margin-right: 150px;
+        max-width: 300px;
+        max-height: 380px;
+        .img-fluid{
+            @include wh(100% ,100%);
+            border-radius: 10px;
+        }
+    }
+    &__descr{
+        margin-top: 40px;
+        max-width: 500px;
+        @include fs-lh(28px,33px);
+        font-weight: $font-w500;
+        color: $color__white;
+    }
+    &__items{
+        @include py(40px ,40px);
+        display: flex;
+        justify-content: center;
+    }
+    &__item{
+        margin-right: 10px;
+        @include fs-lh(28px,33px);
+        font-weight: $font-w500;
+        color: $color__black;
+    }
+
+}

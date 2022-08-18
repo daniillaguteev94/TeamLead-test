@@ -1,0 +1,74 @@
+.promo{
+    position: relative;
+    min-height: 100vh;
+    //overflow: hidden;
+    @include py(100px ,100px);
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        @include wh(100%);
+        background-color: rgba(0 ,0 ,0 ,.5);
+        top: 0;
+        left: 0;
+        z-index: 15;
+    }
+    &__video{
+        // position: absolute;
+        // top: 0;
+        // @include wh(100%);
+        // z-index: 10;
+        position: absolute;
+        min-width: 100%;
+        min-height: 100%;
+        left: 50%;
+        top: 50%;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        
+    }
+    &__media{
+        @include wh(100% ,auto);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__wrapper{
+        @extend %d-around;
+        margin-top: 25px;
+    }
+    &__preview{
+        width: 100%;
+        max-width: 300px;
+        max-height: 400px;
+        .img-fluid{
+            @include wh(100% ,100%);
+        }
+    }
+    &__descr{
+        width: 500px;
+        height: auto;
+       
+    }
+    &__items{
+        margin-top: 16px;
+        list-style-type: none;
+        
+    }
+    &__item{
+        @include fs-lh(22px,28px);
+        font-weight: $font-w500;
+        color: $color__white;
+        margin-bottom: 10px; 
+       
+    } 
+    
+}
+
+.promo__container{
+    @extend %container;
+    position: relative;
+    z-index: 20;
+}
+
+

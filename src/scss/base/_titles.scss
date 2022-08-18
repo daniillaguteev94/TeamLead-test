@@ -1,0 +1,13 @@
+.h1{
+    @include fs-lh(75px ,80px);
+    color: $color__white;
+    display: block;
+    text-align: center;
+}
+.h2{
+    @include fs-lh(52px ,60px);
+    color: $color__black;
+    display: block;
+    text-align: center;
+    
+}

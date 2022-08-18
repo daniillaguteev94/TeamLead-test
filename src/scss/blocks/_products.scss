@@ -1,0 +1,33 @@
+.products{
+    
+    &__wrapper{
+        @extend %d-around;
+        @include py(100px ,100px)
+    }
+    &__items{
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    &__img{
+        @include wh(110px ,110px);
+        margin-right: 20px;
+        .img-fluid{
+            border-radius:100%;
+            @include wh(100% ,100%);
+        }
+    }
+    &__text{
+        @include fs-lh(22px,28px);
+        font-weight: $font-w500;
+        color: $color__white;
+    }
+    &__preview{
+        @include wh(180px ,270px);
+        margin-top: 95px;
+        .img-fluid{
+            @include wh(100% ,100%);
+        }
+    }
+       
+}

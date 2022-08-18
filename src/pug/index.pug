@@ -1,0 +1,99 @@
+extends base 
+
+block meta 
+    - var title = 'Главная';
+
+block wrapper   
+    maim.main 
+        section.section.section--promo
+            .promo
+                .promo__video
+                    video.promo__media(src='/video/video.mp4' autoplay muted loop)
+                .promo__container
+                    h1.h1 LevelUp
+                    .promo__wrapper 
+                        .promo__preview 
+                            +image('prod.png')
+                        .promo__descr
+                            ul.promo__items 
+                                li.promo__item Повышает потенцию
+                                li.promo__item Не вредит здоровью
+                                li.promo__item Самый безопасный на рынке препаратов
+        section.section.section--products 
+            .products.bg-default 
+                .container
+                    .products__wrapper 
+                        .products__left 
+                            .products__items 
+                                .products__img 
+                                    +image('tablet.jpg')
+                                .products__text Папаверин
+                            .products__items 
+                                .products__img 
+                                    +image('tablet.jpg')
+                                .products__text Дротаверина
+                            .products__items 
+                                .products__img 
+                                    +image('tablet.jpg')
+                                .products__text Магния стеарат
+                        .products__center
+                            .products__preview 
+                                +image('prod.png')
+                        .products__right
+                            .products__items 
+                                .products__img 
+                                    +image('tablet.jpg')
+                                .products__text Силденафил
+                            .products__items 
+                                .products__img 
+                                    +image('tablet.jpg')
+                                .products__text Полисорбат
+                            .products__items 
+                                .products__img 
+                                    +image('tablet.jpg')
+                                .products__text Титана диоксид
+        section.section.section--reviews 
+            .reviews
+                h2.h2 Отзывы клиентов: 
+                    .reviews__slides 
+                        .swiper.swipermain
+                            .swiper-wrapper
+                                .swiper-slide.slide-reviews.bg-default 
+                                    .reviews__items
+                                        .reviews__img 
+                                            +image('chel1.jpg')
+                                        .reviews__descr
+                                            .reviews__subtitle Григорий Ворнородный 
+                                            .reviews__text препарат шикарен,побочки нет,писюха как новая стоит     
+                                .swiper-slide.slide-reviews.bg-default 
+                                    .reviews__items
+                                        .reviews__img 
+                                            +image('chel1.jpg')
+                                        .reviews__descr
+                                            .reviews__subtitle Денис Букалаев
+                                            .reviews__text изначально не верил в действие препарата,пока не попробовал.
+                                                | от результата остался в шоке,был восторг на душе,всем советую братцы
+                                .swiper-slide.slide-reviews.bg-default 
+                                    .reviews__items
+                                        .reviews__img 
+                                            +image('chel1.jpg')
+                                        .reviews__descr
+                                            .reviews__subtitle Михаил Мишугин 
+                                            .reviews__text просто нет конкурентов у этого средства,всем советую!покупайте не пожалеете
+        section.section.section--about 
+            .about.bg-default
+                .container
+                    .about__wrapper 
+                        .about__icon 
+                            +image('doctor.jpg')
+                        .about__descr Доктора всего мира рекомендуют нас,более 1000 отзывов,более 5000 продаж,
+                            | покупай сейчас и не задумывайся,вернем деньги если не поможет                                   
+                    ul.about__items 
+                        li.about__item Лучший!
+                        li.about__item Недорогой!
+                        li.about__item Действующий!
+        section.section.section--order
+            .order 
+                .container
+                    .order__items
+                        h2.h2 LevelUp

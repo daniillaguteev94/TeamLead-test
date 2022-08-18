@@ -1,7 +1,7 @@
 {
-  "name": "falmec",
+  "name": "LevelUp",
   "version": "1.0.0",
-  "description": "falmec",
+  "description": "LevelUp",
   "scripts": {
     "dev": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
@@ -13,7 +13,7 @@
   "keywords": [],
   "author": "tg:@DaniilLaguteev <daniillaga121@yandex.ru>",
   "license": "ISC",
-  "homepage": "https://falmec.ru",
+  "homepage": "https://levelup.ru",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
