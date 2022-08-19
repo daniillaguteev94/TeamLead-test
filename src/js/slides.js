@@ -1,6 +1,6 @@
 import Swiper from 'swiper';
 
-var swiper = new Swiper(".swipermain", {
+var swiper = new Swiper(".swiper_reviews", {
   loop: true,
   slidesPerView: 'auto',
   spaceBetween: 10,

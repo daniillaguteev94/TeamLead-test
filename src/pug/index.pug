@@ -4,7 +4,7 @@ block meta
     - var title = 'Главная';
 
 block wrapper   
-    maim.main 
+    main.main 
         section.section.section--promo
             .promo
                 .promo__video
@@ -56,7 +56,7 @@ block wrapper
             .reviews
                 h2.h2 Отзывы клиентов: 
                     .reviews__slides 
-                        .swiper.swipermain
+                        .swiper.swiper_reviews
                             .swiper-wrapper
                                 .swiper-slide.slide-reviews.bg-default 
                                     .reviews__items
@@ -95,5 +95,26 @@ block wrapper
         section.section.section--order
             .order 
                 .container
-                    .order__items
+                    .order__content
                         h2.h2 LevelUp
+                        .order__time
+                            .seconds.seconds_style 30
+                        .order__promo 
+                            .order__left
+                                .order__product 
+                                    +image('prod.png')
+                                .order__sale 
+                                    span.order__price
+                                        s 5000 
+                                    span.order__price 3500
+                            .order__right 
+                                form.form.form--order
+                                    .form__item 
+                                        label.form-label Ваше имя 
+                                        input.form-input(placeholder="имя" type="name")
+                                    .form__item 
+                                        label.form-label Телефон
+                                        input.form-input(placeholder="телефон" type="tel")
+                                    .form__item 
+                                        button.btn.btn_form Заказать звонок
+

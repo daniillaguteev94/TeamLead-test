@@ -1,0 +1,39 @@
+.order {
+    @include py(100px ,100px);
+    &__time {
+        @extend %df-center;
+    }
+    &__promo  {
+        @extend %d-around;
+    }
+    &__right {
+        width: 50%;
+    }
+    &__product {
+        @include wh(300px);
+        img {
+            @include wh(100%);
+        }
+    }
+    &__sale {
+        @extend %df-center;
+        @include my(15px,0);
+    }
+    &__price {
+        @include px(0,15px);
+        @include fs-lh(18px,20px);
+        font-weight: $font-w300;
+        s {
+            color:$color__red;
+        }
+    }
+}
+
+.seconds {
+    @include my(30px);
+    &.seconds_style {
+        @include fs-lh(22px,28px);
+        font-weight: $font-w500;
+        color:$color__red;
+    }
+}

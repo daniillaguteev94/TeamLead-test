@@ -1,17 +1,16 @@
 .products{
-    
+    @include py(100px ,100px);
     &__wrapper{
         @extend %d-around;
-        @include py(100px ,100px)
     }
     &__items{
         display: flex;
         align-items: center;
-        margin-bottom: 40px;
+        @include my(0,40px);
     }
     &__img{
         @include wh(110px ,110px);
-        margin-right: 20px;
+        @include mx(0,20px);
         .img-fluid{
             border-radius:100%;
             @include wh(100% ,100%);
@@ -24,6 +23,7 @@
     }
     &__preview{
         @include wh(180px ,270px);
+        @include my(95px,0);
         margin-top: 95px;
         .img-fluid{
             @include wh(100% ,100%);

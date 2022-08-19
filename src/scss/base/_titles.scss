@@ -3,11 +3,12 @@
     color: $color__white;
     display: block;
     text-align: center;
+    margin: 0;
 }
 .h2{
     @include fs-lh(52px ,60px);
     color: $color__black;
     display: block;
     text-align: center;
-    
+    margin: 0;
 }

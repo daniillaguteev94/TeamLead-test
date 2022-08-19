@@ -1,7 +1,6 @@
 .promo{
     position: relative;
     min-height: 100vh;
-    //overflow: hidden;
     @include py(100px ,100px);
     &::after{
         content: "";
@@ -14,10 +13,6 @@
         z-index: 15;
     }
     &__video{
-        // position: absolute;
-        // top: 0;
-        // @include wh(100%);
-        // z-index: 10;
         position: absolute;
         min-width: 100%;
         min-height: 100%;
@@ -46,12 +41,11 @@
         }
     }
     &__descr{
-        width: 500px;
-        height: auto;
+        @include wh(500px,auto);
        
     }
     &__items{
-        margin-top: 16px;
+        @include my(16px,0);
         list-style-type: none;
         
     }
@@ -59,8 +53,7 @@
         @include fs-lh(22px,28px);
         font-weight: $font-w500;
         color: $color__white;
-        margin-bottom: 10px; 
-       
+        @include my(0,10px);
     } 
     
 }
@@ -69,6 +62,12 @@
     @extend %container;
     position: relative;
     z-index: 20;
+}
+
+.promo {
+    .h1 {
+        @include my(0,100px);
+    }
 }
 
 

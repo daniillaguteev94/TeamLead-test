@@ -1,6 +1,5 @@
 .reviews{
-    
-    
+    @include my(50px);
     &__items{
         margin-top: 40px;
        display: flex;
@@ -8,7 +7,7 @@
     }
     &__img{
         @include wh(150px ,150px);
-        margin-right: 70px;
+        @include mx(0,70px);
         .img-fluid{
             border-radius:100%;
             @include wh(100% ,100%);
@@ -18,7 +17,7 @@
         @include fs-lh(26px,30px);
         font-weight: $font-w500;
         color: $color__white;
-        margin-bottom: 25px;
+        @include my(0,25px);
     }
     &__text{
         @include fs-lh(18px,22px);
