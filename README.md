@@ -1,7 +1,7 @@
 # TeamLead-test
 
 Сборка 
- npm i 
- npm run dev 
- npm run build 
+ npm i - установка;
+ npm run dev - запуск ;
+ npm run build ;
  
