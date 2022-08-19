@@ -19,6 +19,7 @@ block wrapper
                                 li.promo__item Повышает потенцию
                                 li.promo__item Не вредит здоровью
                                 li.promo__item Самый безопасный на рынке препаратов
+                            a(href="#order").btn.btn_products Заказать
         section.section.section--products 
             .products.bg-default 
                 .container
@@ -39,6 +40,7 @@ block wrapper
                         .products__center
                             .products__preview 
                                 +image('prod.png')
+                            a(href="#order").btn.btn_products Заказать
                         .products__right
                             .products__items 
                                 .products__img 
@@ -92,7 +94,7 @@ block wrapper
                         li.about__item Лучший!
                         li.about__item Недорогой!
                         li.about__item Действующий!
-        section.section.section--order
+        section.section.section--order(id="order")
             .order 
                 .container
                     .order__content

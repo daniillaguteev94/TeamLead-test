@@ -19,14 +19,3 @@
        }
     }
 }
-
-.btn {
-    outline: none;
-    border: none;
-    cursor:pointer;
-    &.btn_form {
-        background:$color__black;
-        color:$color__white;
-        padding: 6px; 
-    }
-}
