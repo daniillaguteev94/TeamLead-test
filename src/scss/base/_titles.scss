@@ -4,6 +4,9 @@
     display: block;
     text-align: center;
     margin: 0;
+    @media (max-width:$tablet-sm - 1){
+        @include fs-lh(32px ,30px);
+    }
 }
 .h2{
     @include fs-lh(52px ,60px);
@@ -11,4 +14,7 @@
     display: block;
     text-align: center;
     margin: 0;
+    @media (max-width:$tablet-sm - 1){
+        @include fs-lh(25px ,28px);
+    }
 }

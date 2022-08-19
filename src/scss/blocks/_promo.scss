@@ -2,6 +2,13 @@
     position: relative;
     min-height: 100vh;
     @include py(100px ,100px);
+    @media (max-width:$desktop-sm - 1){
+        min-height: 100%;
+        @include py(65px);
+    }
+    @media (max-width:$tablet-sm - 1){
+        @include py(15px,0);
+    }
     &::after{
         content: "";
         display: block;
@@ -31,11 +38,19 @@
     &__wrapper{
         @extend %d-around;
         margin-top: 25px;
+        @media (max-width:$tablet-sm - 1){
+            @include py(0,45px);
+            @include px(12px);
+        }
     }
     &__preview{
         width: 100%;
         max-width: 300px;
         max-height: 400px;
+        @media (max-width:$desktop-sm - 1){
+            max-width: 100px;
+            max-height: 250px;
+        }
         .img-fluid{
             @include wh(100% ,100%);
         }
@@ -54,6 +69,9 @@
         font-weight: $font-w500;
         color: $color__white;
         @include my(0,10px);
+        @media (max-width:$desktop-sm - 1){
+            @include fs-lh(18px,20px);
+        }
     } 
     
 }
@@ -67,6 +85,9 @@
 .promo {
     .h1 {
         @include my(0,100px);
+        @media (max-width:$desktop-sm - 1){
+            @include my(0,20px);
+        }
     }
 }
 

@@ -3,6 +3,9 @@
     &__wrapper{
         display: flex;
         justify-content: center;
+        @media (max-width:$tablet-sm - 1){
+            flex-direction: column;
+        }
     }
     &__icon{
         width: 100%;
@@ -25,12 +28,18 @@
         display: flex;
         justify-content: center;
         margin: 0;
+        @media (max-width:$tablet-sm - 1){
+           padding-left: 0;
+        }
     }
     &__item{
         margin-right: 10px;
         @include fs-lh(28px,33px);
         font-weight: $font-w500;
         color: $color__black;
+        @media (max-width:$tablet-sm - 1){
+            @include fs-lh(16px,18px);
+        }
     }
 
 }

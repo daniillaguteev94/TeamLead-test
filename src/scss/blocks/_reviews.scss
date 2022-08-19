@@ -8,9 +8,18 @@
     &__img{
         @include wh(150px ,150px);
         @include mx(0,70px);
+        @media (max-width:$tablet-sm - 1){
+            @include wh(50px);
+            @include mx(0);
+        }
         .img-fluid{
             border-radius:100%;
             @include wh(100% ,100%);
+        }
+    }
+    &__descr {
+        @media (max-width:$tablet-sm - 1){
+            @include mx(20px,0);
         }
     }
     &__subtitle{

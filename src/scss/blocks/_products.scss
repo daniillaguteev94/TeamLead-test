@@ -2,11 +2,35 @@
     @include py(100px ,100px);
     &__wrapper{
         @extend %d-around;
+        @media (max-width:$tablet-md){
+           flex-direction: column;
+           justify-content: center;
+        }
+    }
+    &__left {
+        @media (max-width:$tablet-md){
+           display: flex;
+           flex-wrap: wrap;
+        }
+    }
+    &__right {
+        @media (max-width:$tablet-md){
+           display: flex;
+           flex-wrap: wrap;
+        }
+    }
+    &__center {
+        @media (max-width:$tablet-md){
+            @include my(20px);
+        }
     }
     &__items{
         display: flex;
         align-items: center;
         @include my(0,40px);
+        @media (max-width:$tablet-md){
+            @include mx(0,25px);
+        }
     }
     &__img{
         @include wh(110px ,110px);
@@ -25,8 +49,17 @@
         @include wh(180px ,270px);
         @include my(95px,0);
         margin-top: 95px;
+        @media (max-width:$tablet-md){
+            @include wh(100%);
+            @include my(0px,0);
+            display: flex;
+            justify-content: center;
+        }
         .img-fluid{
             @include wh(100% ,100%);
+            @media (max-width:$tablet-md){
+                @include wh(150px ,250px);
+            }
         }
     }
        

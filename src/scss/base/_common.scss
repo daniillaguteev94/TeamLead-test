@@ -17,6 +17,9 @@ a {
 .container {
     @extend %container;
     position: relative;
+    @media (max-width:$desktop-sm - 1){
+        @include px(12px);
+    }
 }
 
 .swiper{
@@ -24,19 +27,15 @@ a {
     height: 100%;
   
 }
-.swipermain{
-    //height: 100vh;  
-}
-// .swiper-slide {
-//     text-align: center;
-//     font-size: 18px;
-//     background: #fff;
-// }
+
 .slide-reviews{
     @include wh(750px ,210px);
     margin-top: 25px;
     @include py(15px ,15px);
     @include px(20px ,20px);
+    @media (max-width:$tablet-sm - 1){
+        @include wh(400px ,210px);
+    }
 }
 
 .bg-default{
